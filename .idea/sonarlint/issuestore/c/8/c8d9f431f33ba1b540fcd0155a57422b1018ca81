@@ -1,0 +1,11 @@
+
+[
+squid:S106r"9Replace this use of System.out or System.err by a logger.(˜Ýš•üÿÿÿÿ8ŽÂ¢¹Æ,
+V
+squid:S106c"9Replace this use of System.out or System.err by a logger.(÷àÉ÷8ŽÂ¢¹Æ,
+>squid:S2676–"Use the original value instead.(á¦É¼8Ë·§­Ñ,
+°%squid:RedundantThrowsDeclarationCheck,"sRemove the declaration of thrown exception 'java.lang.ArrayIndexOutOfBoundsException' which is a runtime exception.(ïƒÒ©þÿÿÿÿ8ŽÂ¢¹Æ,
+[
+squid:S106l"9Replace this use of System.out or System.err by a logger.(ðµ¸¡úÿÿÿÿ8ŽÂ¢¹Æ,
+[
+squid:S106]"9Replace this use of System.out or System.err by a logger.(ðµ¸¡úÿÿÿÿ8ŽÂ¢¹Æ,
