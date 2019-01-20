@@ -1,11 +1,12 @@
 
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(÷àÉ÷8Â¢¹Æ,
-]squid:S1118
-":Add a private constructor to hide the implicit public one.(¯ßÔşúÿÿÿÿ8Â¢¹Æ,
+squid:S106$"9Replace this use of System.out or System.err by a logger.(÷àÉ÷8îÁœÖ,
+]squid:S1118":Add a private constructor to hide the implicit public one.(¯ßÔşúÿÿÿÿ8Â¢¹Æ,
 [
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ğµ¸¡úÿÿÿÿ8Â¢¹Æ,
-[
-squid:S106,"9Replace this use of System.out or System.err by a logger.(˜İš•üÿÿÿÿ8Â¢¹Æ,
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ğµ¸¡úÿÿÿÿ8Â¢¹Æ,
+squid:S1065"9Replace this use of System.out or System.err by a logger.(˜İš•üÿÿÿÿ8ıõ•œÖ,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(‡¤Ÿ”8Îã‹œÖ,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Âæ“ú8ŞÇ¾Ö,
+V
+squid:S106/"9Replace this use of System.out or System.err by a logger.(‡¤Ÿ”8×§•œÖ,

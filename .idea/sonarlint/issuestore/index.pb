@@ -17,3 +17,13 @@ K
 src/app/LibraryControl.java,4/8/485674cfbc8a9769dd08445fa751dc982819ef95
 J
 src/utils/FileManager.java,7/1/71dbbb0afc0686dd1f10945947615d44eb6af7be
+N
+.idea/dictionaries/oskarro.xml,9/d/9de0767c080e3c24af4850a649d061946ed1980b
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+;
+mySound.iml,d/6/d6487c11944245a493593199535d39026f87d516
+B
+src/data/User.java,9/e/9e59d7e4b8cdfbbb580af81728196a9a48368eeb
+I
+src/data/LibraryUser.java,c/e/ce56a4c24f0e5d0f6543f46d22f86c7b39bab729

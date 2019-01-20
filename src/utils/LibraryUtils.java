@@ -3,43 +3,48 @@ package utils;
 import data.Library;
 import data.Mix;
 import data.File;
+import data.Track;
+import data.LibraryUser;
 
 
-import java.util.Collection;
+import java.util.*;
 
 
 public class LibraryUtils {
 
+    // Printing list of user
+    public static void printUsers(Library lib) {
+        lib.getUsers().values()
+                .stream()
+                .sorted((a,b) -> a.getLogin().compareTo(b.getLogin()))
+                .forEach(System.out::println);
+
+    }
+
+
     // Printing info about tracks
     public static void printTracks(Library lib) {
-        Collection<File> files = lib.getFiles().values();
-        int countTracks = 0;
-        for (File f : files) {
-            if (f instanceof File) {
-                System.out.println(f);
-                countTracks++;
-            }
-        }
-
-        if (countTracks == 0) {
-            System.out.println("There is no tracks in library");
-        }
+        printFiles(lib, Track.class);
     }
 
 
     // Printing info about mixes
     public static void printMixes(Library lib) {
-        Collection<File> files = lib.getFiles().values();
-        int countMixes = 0;
-        for (File f : files) {
-            if (f instanceof Mix) {
-                System.out.println(f);
-                countMixes++;
-            }
-        }
+        printFiles(lib, Mix.class);
+    }
 
-        if (countMixes == 0) {
-            System.out.println("There is no mixes in library");
+
+    // Printing info about files (this method is importing to both printing methods above)
+    private static void printFiles(Library lib, Class cl) {
+        long countFiles = lib.getFiles()
+                .values()
+                .stream()
+                .filter(cl::isInstance)
+                .sorted(new Library.AlphaBeticalComparator())
+                .peek(System.out::println).count();
+
+        if (countFiles == 0) {
+            System.out.println("There are no following type files in library: " + cl.getSimpleName());
         }
     }
 }

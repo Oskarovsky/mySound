@@ -3,6 +3,8 @@ package utils;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+import data.File;
+import data.LibraryUser;
 import data.Mix;
 import data.Track;
 
@@ -30,6 +32,19 @@ public class DataReader {
         return number;
     }
 
+
+    // loading new users data
+    public LibraryUser readAndCreateLibraryUser() {
+        System.out.println("Login: ");
+        String login = sc.nextLine();
+        System.out.println("Email: ");
+        String email = sc.nextLine();
+        System.out.println("Password: ");
+        String password = sc.nextLine();
+
+        // return new user
+        return new LibraryUser(login, email, password);
+    }
 
     // taking data from user - TRACK
     public Track readAndCreateTrack() throws InputMismatchException {

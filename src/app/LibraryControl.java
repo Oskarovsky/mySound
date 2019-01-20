@@ -3,6 +3,8 @@ package app;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
+
+import data.LibraryUser;
 import utils.DataReader;
 import utils.FileManager;
 import utils.LibraryUtils;
@@ -59,16 +61,18 @@ public class LibraryControl {
                     case PRINT_MIXES:
                         printMixes();
                         break;
+                    case ADD_USER:
+                        addUser();
+                        break;
+                    case PRINT_USERS:
+                        printUsers();
+                        break;
                     case EXIT:
-                        ;
+                        exit();
                 }
-            }
-            catch(InputMismatchException e)
-            {
+            } catch(InputMismatchException e) {
                 System.out.println("You've entered incorrect data. The files hasn't been added");
-            }
-            catch(NumberFormatException e)
-            {
+            } catch(NumberFormatException e) {
                 System.out.println("There is no that option. Try again!");
             }
         }
@@ -92,7 +96,7 @@ public class LibraryControl {
 
     // print info about all tracks
     private void printTracks() {
-        library.printTracks();
+        LibraryUtils.printTracks(library);
     }
 
 
@@ -104,7 +108,22 @@ public class LibraryControl {
 
     // print info about all mixes
     private void printMixes() {
-        library.printMixes();
+        LibraryUtils.printMixes(library);
+    }
+
+    // add user to the application
+    private void addUser() {
+        LibraryUser user = dataReader.readAndCreateLibraryUser();
+        library.addUser(user);
+    }
+
+    // print info about all users
+    private void printUsers() {
+        LibraryUtils.printUsers(library);
+    }
+
+    private void exit() {
+        fileManager.writeLibraryToFile(library);
     }
 
     // enumeration type (enum)
@@ -113,7 +132,10 @@ public class LibraryControl {
         ADD_TRACK(1, "Add track"),
         ADD_MIX(2, "Add mix"),
         PRINT_TRACKS(3, "Display all available tracks"),
-        PRINT_MIXES(4, "Display all available mixes");
+        PRINT_MIXES(4, "Display all available mixes"),
+        ADD_USER(5, "Add new user"),
+        PRINT_USERS(6, "Display list of users");
+
 
         private int value;
         private String description;

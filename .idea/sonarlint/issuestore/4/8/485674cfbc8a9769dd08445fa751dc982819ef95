@@ -1,16 +1,14 @@
 
+©%squid:RedundantThrowsDeclarationCheck™"kRemove the declaration of thrown exception 'java.util.NoSuchElementException' which is a runtime exception.(–Œ€ÿÿÿÿÿ8Ãş‰Ï,
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(àú»úÿÿÿÿ8Ãş‰Ï,
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(§ÌÍÕÿÿÿÿÿ8Ãş‰Ï,
-[
-squid:S106D"9Replace this use of System.out or System.err by a logger.(üÉËùıÿÿÿÿ8Â¢¹Æ,
+squid:S106!"9Replace this use of System.out or System.err by a logger.(§ÌÍÕÿÿÿÿÿ8Ãş‰Ï,
 V
-squid:S106S"9Replace this use of System.out or System.err by a logger.(Ú“Üİ8Â¢¹Æ,
-Rsquid:EmptyStatementUsageCheck?"Remove this empty statement.(Åñ­õşÿÿÿÿ8Â¢¹Æ,
-©%squid:RedundantThrowsDeclarationCheckƒ"kRemove the declaration of thrown exception 'java.util.NoSuchElementException' which is a runtime exception.(–Œ€ÿÿÿÿÿ8Ãş‰Ï,
-V
-squid:S106H"9Replace this use of System.out or System.err by a logger.(„Ä‹ğ8Â¢¹Æ,
+squid:S106W"9Replace this use of System.out or System.err by a logger.(Ú“Üİ8Â¢¹Æ,
 U
-squid:S106Q"9Replace this use of System.out or System.err by a logger.(†÷g8Â¢¹Æ,
-_squid:UselessImportCheck"/Remove this unused import 'utils.LibraryUtils'.(ÀÏã´ùÿÿÿÿ8Â¢¹Æ,
+squid:S106U"9Replace this use of System.out or System.err by a logger.(†÷g8Â¢¹Æ,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(àú»úÿÿÿÿ8Ãş‰Ï,
+V
+squid:S106L"9Replace this use of System.out or System.err by a logger.(„Ä‹ğ8Â¢¹Æ,
+[
+squid:S106J"9Replace this use of System.out or System.err by a logger.(üÉËùıÿÿÿÿ8Â¢¹Æ,

@@ -1,26 +1,33 @@
 
-§%squid:RedundantThrowsDeclarationCheck"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ø»¢™øÿÿÿÿ8Â¢¹Æ,
-[
-squid:S106>"9Replace this use of System.out or System.err by a logger.(²è†ıÿÿÿÿ8Â¢¹Æ,
-[
-squid:S106$"9Replace this use of System.out or System.err by a logger.(²è†ıÿÿÿÿ8Â¢¹Æ,
 V
-squid:S106@"9Replace this use of System.out or System.err by a logger.(™Â²•8Â¢¹Æ,
-V
-squid:S106("9Replace this use of System.out or System.err by a logger.(×ù±ü8Â¢¹Æ,
+squid:S106O"9Replace this use of System.out or System.err by a logger.(™Â²•8Â¢¹Æ,
 [
-squid:S1065"9Replace this use of System.out or System.err by a logger.(Ÿš€¡øÿÿÿÿ8Â¢¹Æ,
-usquid:S2737I"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Â¢¹Æ,
-¨%squid:RedundantThrowsDeclarationCheck#"kRemove the declaration of thrown exception 'java.util.InputMismatchException' which is a runtime exception.(ÙïÚüÿÿÿÿ8Â¢¹Æ,
+squid:S106\"9Replace this use of System.out or System.err by a logger.(Ÿš€¡øÿÿÿÿ8Â¢¹Æ,
+U
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ÌÃöX8Öˆ¾Ö,
 [
-squid:S106D"9Replace this use of System.out or System.err by a logger.(Ò†Óÿıÿÿÿÿ8Â¢¹Æ,
+squid:S106M"9Replace this use of System.out or System.err by a logger.(²è†ıÿÿÿÿ8Â¢¹Æ,
 [
-squid:S106,"9Replace this use of System.out or System.err by a logger.(Ò†Óÿıÿÿÿÿ8Â¢¹Æ,
-V
-squid:S106&"9Replace this use of System.out or System.err by a logger.(™Â²•8Â¢¹Æ,
-V
-squid:S106*"9Replace this use of System.out or System.err by a logger.(ÓÒö£8Â¢¹Æ,
+squid:S106S"9Replace this use of System.out or System.err by a logger.(Ò†Óÿıÿÿÿÿ8Â¢¹Æ,
 [
-squid:S106M"9Replace this use of System.out or System.err by a logger.(Ÿš€¡øÿÿÿÿ8Â¢¹Æ,
+squid:S1063"9Replace this use of System.out or System.err by a logger.(²è†ıÿÿÿÿ8Â¢¹Æ,
 V
-squid:S106B"9Replace this use of System.out or System.err by a logger.(ÓÒö£8Â¢¹Æ,
+squid:S1065"9Replace this use of System.out or System.err by a logger.(™Â²•8Â¢¹Æ,
+[
+squid:S106D"9Replace this use of System.out or System.err by a logger.(Ÿš€¡øÿÿÿÿ8Â¢¹Æ,
+usquid:S2737X"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Â¢¹Æ,
+¨%squid:RedundantThrowsDeclarationCheck2"kRemove the declaration of thrown exception 'java.util.InputMismatchException' which is a runtime exception.(ÙïÚüÿÿÿÿ8Â¢¹Æ,
+V
+squid:S1067"9Replace this use of System.out or System.err by a logger.(×ù±ü8Â¢¹Æ,
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(Š‘Ğµşÿÿÿÿ8‡Ú…¾Ö,
+V
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(ÓÒö£8Â¢¹Æ,
+[
+squid:S106;"9Replace this use of System.out or System.err by a logger.(Ò†Óÿıÿÿÿÿ8Â¢¹Æ,
+Vsquid:UselessImportCheck"&Remove this unused import 'data.File'.(ìÈ±–øÿÿÿÿ8³½€¾Ö,
+§%squid:RedundantThrowsDeclarationCheck"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ø»¢™øÿÿÿÿ8Â¢¹Æ,
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(İçÜÇ8Ó¸‚¾Ö,
+V
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ÓÒö£8Â¢¹Æ,
