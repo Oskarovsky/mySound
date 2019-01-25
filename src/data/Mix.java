@@ -1,5 +1,8 @@
 package data;
 
+import java.time.LocalDate;
+import java.util.Objects;
+
 public class Mix extends File {
 
     // constant, which allows versioning classes
@@ -8,7 +11,7 @@ public class Mix extends File {
     // added fields + file.fields
     private String artist;
     private String genre;
-    private int year;
+    private LocalDate date;
 
     // SETTERS AND GETTERS
     public String getArtist() {
@@ -27,12 +30,12 @@ public class Mix extends File {
         this.genre = genre;
     }
 
-    public int getYear() {
-        return year;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setDate(LocalDate year) {
+        this.date = date;
     }
 
     // CONSTRUCTOR
@@ -40,7 +43,7 @@ public class Mix extends File {
         super(title, length);  // shortened by using super()
         setArtist(artist);
         setGenre(genre);
-        setYear(year);
+        setDate(LocalDate.of(year,1,1));
     }
 
     // METHOD toString() - print info about mix
@@ -52,31 +55,28 @@ public class Mix extends File {
         print.append(" ");
         print.append(getGenre());
         print.append(" ");
-        print.append(getYear());
+        print.append(getDate());
         print.append(" ");
         print.append(getLength());
         return print.toString();
     }
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Mix)) return false;
         if (!super.equals(o)) return false;
-
         Mix mix = (Mix) o;
-
-        if (getYear() != mix.getYear()) return false;
-        if (getArtist() != null ? !getArtist().equals(mix.getArtist()) : mix.getArtist() != null) return false;
-        return getGenre() != null ? getGenre().equals(mix.getGenre()) : mix.getGenre() == null;
+        return Objects.equals(artist, mix.artist) &&
+                Objects.equals(genre, mix.genre) &&
+                Objects.equals(date, mix.date);
     }
 
     @Override
     public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (getArtist() != null ? getArtist().hashCode() : 0);
-        result = 31 * result + (getGenre() != null ? getGenre().hashCode() : 0);
-        result = 31 * result + getYear();
-        return result;
+        return Objects.hash(super.hashCode(), artist, genre, date);
     }
+
+
 }

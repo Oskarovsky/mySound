@@ -1,5 +1,8 @@
 package data;
 
+import java.time.LocalDate;
+import java.util.Objects;
+
 public class Track extends File {
 
     // constant, which allows versioning classes
@@ -9,7 +12,7 @@ public class Track extends File {
     private String artist;
     private String version;
     private String genre;
-    private int year;
+    private LocalDate date;
 
 
 
@@ -38,12 +41,12 @@ public class Track extends File {
         this.genre = genre;
     }
 
-    public int getYear() {
-        return year;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
 
@@ -53,7 +56,7 @@ public class Track extends File {
         this.setArtist(artist);
         this.setVersion(version);
         this.setGenre(genre);
-        this.setYear(year);
+        this.setDate(LocalDate.of(year,1,1));
     }
 
     // METHOD toString() - print info about track
@@ -67,34 +70,26 @@ public class Track extends File {
         print.append(") ");
         print.append(getGenre());
         print.append(" ");
-        print.append(getYear());
+        print.append(getDate());
         print.append(" ");
         print.append(getLength());
         return print.toString();
     }
-
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Track)) return false;
         if (!super.equals(o)) return false;
-
         Track track = (Track) o;
-
-        if (getYear() != track.getYear()) return false;
-        if (getArtist() != null ? !getArtist().equals(track.getArtist()) : track.getArtist() != null) return false;
-        if (getVersion() != null ? !getVersion().equals(track.getVersion()) : track.getVersion() != null) return false;
-        return getGenre() != null ? getGenre().equals(track.getGenre()) : track.getGenre() == null;
+        return Objects.equals(artist, track.artist) &&
+                Objects.equals(version, track.version) &&
+                Objects.equals(genre, track.genre) &&
+                Objects.equals(date, track.date);
     }
 
     @Override
     public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (getArtist() != null ? getArtist().hashCode() : 0);
-        result = 31 * result + (getVersion() != null ? getVersion().hashCode() : 0);
-        result = 31 * result + (getGenre() != null ? getGenre().hashCode() : 0);
-        result = 31 * result + getYear();
-        return result;
+        return Objects.hash(super.hashCode(), artist, version, genre, date);
     }
 }
